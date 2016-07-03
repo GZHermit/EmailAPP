@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发件人:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/mia_maildetail_sender"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主题:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/mia_maildetail_subject"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/mia_maildetail_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正文:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/mia_maildetail_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_textbox"
+                android:text="我是一只小小小小小鸟 想要飞 却怎么也飞不高嗷嗷~"
+                android:gravity="top"
+                android:maxLines="12"
+                android:maxWidth="88dip"
+                android:minLines="8"
+                android:scrollbars="vertical"
+                android:selectAllOnFocus="true" />
+        </TableRow>
+
+        <Button
+            android:id="@+id/mia_maildetail_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="回复"
+            android:textSize="16sp" />
+    </TableLayout>
+
+</LinearLayout>

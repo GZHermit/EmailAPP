@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:showAsAction="always|withText"
+        android:title="目录">
+        <menu>
+            <group android:checkableBehavior="single" >
+                <item
+                    android:id="@+id/mia_menu_receive"
+                    android:title="收件箱"/>
+                <item
+                    android:id="@+id/mia_menu_send"
+                    android:title="发件箱"/>
+                <item
+                    android:id="@+id/mia_menu_delete"
+                    android:title="回收站"/>
+            </group>
+        </menu>
+    </item>
+
+</menu>

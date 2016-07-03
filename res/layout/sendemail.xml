@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收件人:"
+                android:textSize="20sp" />
+
+            <com.example.xmlviewbyself.EmailEditText
+                android:id="@+id/sendemail_edit_recemail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="true"
+                android:editable="true"
+                android:hint="请输入收件人邮箱..."
+                android:inputType="textEmailAddress" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="抄送人:"
+                android:textSize="20sp" />
+
+            <com.example.xmlviewbyself.EmailEditText
+                android:id="@+id/sendemail_edit_ccemail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="true"
+                android:editable="true"
+                android:hint="请输入抄送人邮箱..."
+                android:inputType="textEmailAddress" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主题:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/sendemail_edit_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="true"
+                android:editable="true"
+                android:hint="请输入主题..."
+                android:inputType="textShortMessage" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正文:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/sendemail_edit_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_textbox"
+                android:enabled="true"
+                android:gravity="top"
+                android:hint="请输入正文..."
+                android:inputType="textMultiLine"
+                android:maxLines="12"
+                android:maxWidth="88dip"
+                android:minLines="8"
+                android:scrollbars="vertical"
+                android:selectAllOnFocus="true" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="附件名:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/sendemail_filename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/sendemail_button_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="0dip"
+                android:minWidth="0dip"
+                android:text="+" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/sendemail__button_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送" />
+
+            <Button
+                android:id="@+id/sendemail__button_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
