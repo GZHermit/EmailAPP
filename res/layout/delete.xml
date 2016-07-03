@@ -7,7 +7,7 @@
         android:id="@+id/delete_textview_test"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="这里显示的是回收站"
+        android:text="这里显示haha的是回收站"
         android:textSize="20sp" />
 
 </RelativeLayout>
